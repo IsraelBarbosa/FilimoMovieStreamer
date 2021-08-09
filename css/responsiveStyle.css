@@ -1,0 +1,66 @@
+@media screen and (max-width: 1845px) {
+    /* HEADER */
+    .header__nav-perfil {
+        left: -140px;
+        transform: translateX(0);
+    }
+
+    .header__nav-perfil::before {
+        left: 89%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    /* FIXED */
+    .icon-menu-container {
+        display: block;
+    }
+
+    .nav-header-fixed  {
+        display: flex;
+    }
+
+    /* HEADER */
+    .header__container {
+        justify-content: center;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .container__search-e-perfil {
+        width: auto;
+    }
+
+    .header__form {
+        display: none;
+    }
+
+    .container-perfil {
+        position: absolute;
+        top: 24px;
+        right: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* FIXED */
+    .icon-menu-container {
+        left: 10px;
+    }
+
+    /* HEADER */
+    .container-perfil {
+        top: 27px;
+        right: 10px;
+    }
+
+    .header__foto-perfil {
+        width: 35px;
+    }
+
+    .header__nav-perfil::before {
+	    left: 87%;
+    }   
+}

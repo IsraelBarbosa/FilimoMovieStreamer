@@ -10,6 +10,35 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    /* SECTION MAIN */
+    .main {
+        padding: 0 30px;
+    }
+
+    .main__section-serie__header__container-caracteristicas {
+        flex-wrap: wrap;
+    }
+
+    .main__section-serie__header__caracteristica {
+        margin-bottom: 20px;
+    }
+
+    .main__section-serie__header__sinopse {
+        max-width: 100%;
+    }
+
+
+    /* SECTION ABOUT */
+    .about {
+        padding: 0 30px;
+    }
+
+    .about__paragrafo {
+        max-width: 100%;
+    }
+}
+
 @media screen and (max-width: 1100px) {
     /* FIXED */
     .icon-menu-container {
@@ -19,6 +48,7 @@
     .nav-header-fixed  {
         display: flex;
     }
+
 
     /* HEADER */
     .header__container {
@@ -44,13 +74,90 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    /* ABOUT */
+    .container-thriller {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about__video-thriller {
+        width: 70%;
+        height: auto;
+        margin: 0 0 30px 0;
+    }
+
+    .container-about-descricao__titulo-e-paragrafo {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /* MAIN */
+    /* Container botoes serie */
+    .container-botoes-serie-main {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .container-botoes-serie-main::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -20px;
+        width: 10px;
+        height: 100%;
+        color: rgb(0, 0, 0);
+        box-shadow: -24px 0 15px 10px rgb(255, 255, 255);
+    }
+
+    .container-botoes-serie {
+        overflow-x: scroll;
+    }
+
+    .container-botoes-serie__principais {
+        background-color: rgb(142, 165, 42);
+    }
+
+    .main__section-serie__header__botao {
+        white-space: nowrap;
+    }
+
+    .container-botoes-serie__principais + .main__section-serie__header__botao:last-child {
+        margin-left: 80px;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    /* MAIN */
+    /* Serie */
+    .container-img-e-info-serie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__section-serie__header__img-capa-da-serie {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     /* FIXED */
     .icon-menu-container {
         left: 10px;
     }
 
+
     /* HEADER */
+    .header {
+	    padding: 0 10px;
+    }
+
     .container-perfil {
         top: 27px;
         right: 10px;
@@ -62,5 +169,23 @@
 
     .header__nav-perfil::before {
 	    left: 87%;
-    }   
+    }  
+    
+    
+    /* MAIN */
+    .main {
+	    padding: 0 10px;
+        margin-top: 150px;
+    }
+
+
+    /* ABOUT */
+    .about {
+	    padding: 0 10px;
+    }
+
+    .about__video-thriller {
+        width: 100%;
+        height: auto;
+    }
 }

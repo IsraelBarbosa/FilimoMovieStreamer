@@ -178,6 +178,15 @@
         margin-top: 150px;
     }
 
+    /* Video fixed */
+    .main__section-serie__header__video-fixed__button-absolute {
+        font-size: 1rem;
+    }
+
+    .main__section-serie__header__video-fixed__button-absolute > span {
+        font-size: 1.4rem;
+    }
+    
 
     /* ABOUT */
     .about {
@@ -185,7 +194,7 @@
     }
 
     .about__video-thriller {
-        width: 100%;
+        width: 94%;
         height: auto;
     }
 }

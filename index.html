@@ -16,6 +16,15 @@
     <!-- ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- VideoJs -->
+    <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
+    <!-- Theme City -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/videoJs/css/overwritingThemeCity.css">
+
+    <!-- Indigo player -->
+    <script src="https://cdn.jsdelivr.net/npm/indigo-player@1/lib/indigo-player.js"></script>
+    <link rel="stylesheet" href="./lib/indigoPlayer/css/indigoPlayer.css">
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsiveStyle.css">
@@ -129,6 +138,16 @@
             <section class="main__section-serie">
                 <header class="main__section-serie__header">
                     <div class="container-img-e-info-serie">
+                        <!-- FIXED -->
+                        <div class="main__section-serie__header__video-fixed">
+                            <button class="main__section-serie__header__video-fixed__button-absolute">
+                                <span class="material-icons">
+                                    arrow_back
+                                </span>Voltar
+                            </button>
+                            <div class="main__section-serie__header__video-fixed__playerContainer" id="playerContainer"></div>
+                        </div>
+
                         <img class="main__section-serie__header__img-capa-da-serie" src="img/serie_capa.png"
                             alt="Capa da serie breaking bad">
 
@@ -240,9 +259,14 @@
         <h1 class="about__titulo">About</h1>
 
         <div class="container-thriller">
-            <video class="about__video-thriller" width="320"
-                poster="./img/video_poster.png" controls>
-                <source src="./video/BreakingBadTrailer.mp4" type="video/mp4">
+            <video id="my-video" class="video-js vjs-theme-city about__video-thriller" controls muted preload="auto"
+                width="320" poster="./img/video_poster.png" data-setup='{ }' >
+                <source src="./video/BreakingBadTrailer.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
             </video>
 
             <div class="container-about-descricao">
@@ -277,6 +301,81 @@
     <script src="./js/index/mostrarInfoPerfil.js"></script>
     <script src="./js/index/mostrarNavHeaderResponsivo.js"></script>
     <script src="./js/index/headerDiminuirScroll.js"></script>
+    <script src="./js/index/abrirVideoPrincipal.js"></script>
+
+    <!-- VideoJs -->
+    <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
+
+    <!-- Indigo player -->
+    <script src="./lib/indigoPlayer/js/indigoPlayer.js"></script>
+
+    <!-- Style Indigo player -->
+    <style>
+    .igui_container_controls {
+        color: #979797;
+        background-color: black;
+        height: 60px;
+        align-items: center;
+    }
+
+    .igui_container_controls_seekbar {
+        bottom: 60px;
+    }
+
+    .igui_seekbar_bars {
+        height: 15px;
+    }
+
+    .igui_icon_play,
+    .igui_icon_pause {
+        color: #979797;
+    }
+
+    .igui_seekbar_progress,
+    .igui_seekbar_scrubber {
+        background-color: rgb(255, 196, 0);
+    }
+
+    .igui_seekbar_scrubber {
+        box-shadow: 0 0 1px 1px rgb(53, 53, 53);
+    }
+
+    .igui_container_controls .igui_button {
+        margin-left: 6px;
+    }
+
+    .igui_container_controls .igui_button .igui_icon {
+        font-size: 36px;
+    }
+
+    .igui_volumebar_scrubber,
+    .igui_volumebar_progress {
+        background-color: rgb(255, 196, 0);
+    }
+
+    .igui_volumebar_scrubber {
+        box-shadow: 0 0 1px 1px rgb(53, 53, 53);
+    }
+
+
+    @media screen and (max-width: 500px) {
+        .igui_container_controls {
+            height: 40px;
+        }
+
+        .igui_container_controls_seekbar {
+            bottom: 40px;
+        }
+
+        .igui_container_controls .igui_button .igui_icon {
+            font-size: 26px;
+        }
+
+        .main__section-serie__header__video-fixed__playerContainer {
+            width: 90%;
+        }
+    }
+    </style>
 </body>
 
 </html>

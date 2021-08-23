@@ -20,7 +20,7 @@ function diminuirHeightHeader() {
     prevScrollpos = currentScrollPos;
 
 
-    setHeaderTransparent();  
+    setHeaderTransparent();
 }
 
 function setHeaderTransparent() {

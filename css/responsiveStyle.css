@@ -118,8 +118,27 @@
         overflow-x: scroll;
     }
 
+    .container-botoes-serie::-webkit-scrollbar {
+       height: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #003b0a;
+    }
+
+    /* Handle */
+    .container-botoes-serie::-webkit-scrollbar-thumb {
+        background: rgb(3, 50, 111); 
+        border-radius: 20px;
+    }
+
+    .container-botoes-serie::-webkit-scrollbar-thumb:hover {
+        background: rgb(0, 25, 58); 
+    }
+
     .container-botoes-serie__principais {
-        background-color: rgb(142, 165, 42);
+        /* background-color: rgb(142, 165, 42); */
     }
 
     .main__section-serie__header__botao {

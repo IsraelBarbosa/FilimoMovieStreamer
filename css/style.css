@@ -25,6 +25,7 @@ body {
 
 .icon-menu-container__icon {
     font-size: 2rem;
+    color: white;
 }
 
 /* Nav */
@@ -245,10 +246,10 @@ body {
 .header__nav-perfil {
     display: none;
     opacity: 0;
-	background-color: rgb(129, 0, 0);
+	background-color: #f99f3e;
     padding: 15px 10px;
     border-radius: 5px;
-    box-shadow: 0 3px 10px rgb(129, 0, 0);
+    box-shadow: 0 3px 10px #f99f3e;
 	position: absolute;
 	top: 60px;
     left: 50%;
@@ -261,7 +262,7 @@ body {
 .header__nav-perfil::before {
 	content: "";
 	border: 10px solid transparent;
-    border-bottom-color: rgb(129, 0, 0);
+    border-bottom-color: #f99f3e;
 	position: absolute;
     top: -20px;
 	left: 50%;
@@ -308,7 +309,7 @@ body {
 .main {
     max-width: 1200px;
     margin: 220px auto 0 auto;
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 /* Serie */
@@ -326,7 +327,7 @@ body {
     z-index: 1000;
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: none;
     justify-content: center;
     background-image: linear-gradient(to right bottom, #010711, #004055, #007e73, #38bb58, #e7e700);
     animation-name: mostrar-video-fixed;
@@ -518,7 +519,7 @@ body {
 .about {
     max-width: 1200px;
     margin: 50px auto 0 auto;
-    background-color: rgb(42, 151, 165);
+    /* background-color: rgb(42, 151, 165); */
 }
 
 .about__titulo {

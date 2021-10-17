@@ -26,6 +26,10 @@
     <script src="https://cdn.jsdelivr.net/npm/indigo-player@1/lib/indigo-player.js"></script>
     <link rel="stylesheet" href="./lib/indigoPlayer/css/indigoPlayer.css">
 
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.css">
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsiveStyle.css">
 </head>
@@ -297,11 +301,47 @@
         </div>
     </section>
 
+    <!-- EPISODES -->
+    <section class="episodes">
+        <h1 class="episodes__titulo">Episodes</h1>
 
+        <div class="container-select-episode">
+            <div class="seasons">
+                <div class="seasons__container">
+                    <div class="seasons__select-personalized">
+                        <select name="seasons" class="seasons__select">
+                            <option value="0">Selec</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+                    <hr>
+                    <span class="seasons__desc-seasons">Seasons</span>
+                </div>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+                <!-- <div class="item">
+                    <figure class="item__img-capa-episodio">
+                        <img src="./img/Breaking-Bad.png" alt="Capa episodio 1">
+                        <figcaption>Episode 1</figcaption>
+                    </figure> 
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- JQuery -->
+    <script src="./lib/owlCarousel/docs/assets/vendors/jquery.min.js"></script>
+    
     <script src="./js/index/mostrarInfoPerfil.js"></script>
     <script src="./js/index/mostrarNavHeaderResponsivo.js"></script>
     <script src="./js/index/headerDiminuirScroll.js"></script>
     <script src="./js/index/abrirVideoPrincipal.js"></script>
+    <script type="module" src="./js/index/selectSeasons.js"></script>
+    <script type="module" src="./js/index/owlCarouselSeasons.js"></script>
 
     <!-- VideoJs -->
     <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
@@ -376,6 +416,11 @@
         }
     }
     </style>
+
+    <!-- Owl carousel -->
+    <script src="./lib/owlCarousel/docs/assets/owlcarousel/owl.carousel.js"></script>
+    <script src="./js/index/iniciarOwlCarousel.js"></script>
+    
 </body>
 
 </html>

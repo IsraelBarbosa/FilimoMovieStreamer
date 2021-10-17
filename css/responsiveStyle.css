@@ -37,6 +37,12 @@
     .about__paragrafo {
         max-width: 100%;
     }
+
+
+    /* EPISODES */ 
+    .episodes {
+        padding: 0 30px;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -163,6 +169,29 @@
         margin-right: 0;
         margin-bottom: 20px;
     }
+
+    
+    /* EPISODES */
+    .seasons {
+        width: 40%;
+    }
+
+    /* owl carousel */
+    .owl-carousel {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* EPISODES */
+    .seasons {
+        width: 50%;
+    }
+
+    /* owl carousel */
+    .owl-carousel {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -215,5 +244,22 @@
     .about__video-thriller {
         width: 94%;
         height: auto;
+    }
+
+
+    /* EPISODES */ 
+    .episodes {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* EPISODES */
+    .seasons {
+        width: 40%;
+    }
+    /* owl carousel */
+    .owl-carousel {
+        width: 60%;
     }
 }

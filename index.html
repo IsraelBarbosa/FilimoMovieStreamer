@@ -149,7 +149,8 @@
                                     arrow_back
                                 </span>Voltar
                             </button>
-                            <div class="main__section-serie__header__video-fixed__playerContainer" id="playerContainer"></div>
+                            <div class="main__section-serie__header__video-fixed__playerContainer" id="playerContainer">
+                            </div>
                         </div>
 
                         <img class="main__section-serie__header__img-capa-da-serie" src="img/serie_capa.png"
@@ -264,7 +265,7 @@
 
         <div class="container-thriller">
             <video id="my-video" class="video-js vjs-theme-city about__video-thriller" controls muted preload="auto"
-                width="320" poster="./img/video_poster.png" data-setup='{ }' >
+                width="320" poster="./img/video_poster.png" data-setup='{ }'>
                 <source src="./video/BreakingBadTrailer.mp4" type="video/mp4" />
                 <p class="vjs-no-js">
                     To view this video please enable JavaScript, and consider upgrading to a
@@ -322,26 +323,89 @@
                 </div>
             </div>
 
-            <div class="owl-carousel owl-theme">
-                <!-- <div class="item">
-                    <figure class="item__img-capa-episodio">
-                        <img src="./img/Breaking-Bad.png" alt="Capa episodio 1">
-                        <figcaption>Episode 1</figcaption>
-                    </figure> 
-                </div> -->
+            <div class="owl-carousel-seasion owl-carousel owl-theme">
+                <!-- <div class="owl-carousel-seasion__item item">
+                        <figure class="item__img-capa-episodio">
+                            <img src="./img/Breaking-Bad.png" alt="Capa episodio 1">
+                            <figcaption>Episode 1</figcaption>
+                        </figure> 
+                     </div> -->
             </div>
         </div>
     </section>
 
+    <!-- MORE LIKE THIS -->
+    <section class="more-like-this">
+        <h1 class="more-like-this__titulo">More Like This</h1>
+
+        <div class="container-owl-carousel-more-like-this">
+            <div class="owl-carousel-more-like-this owl-carousel owl-theme">
+                <!-- <div class="more-like-this__item item">
+                        <figure class="more-like-this__img-capa">
+                            <img src="./img/el_camino.png" alt="Capa filme">
+                            <figcaption>El Camino</figcaption>
+                        </figure> 
+                        <span class="item__desc">TV-MA | Action, Crime</span>
+                     </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMENTS -->
+    <section class="comments">
+        <h1 class="comments__titulo">Comments</h1>
+
+        <div class="comments__container-box-e-comments">
+            <div class="comments__container-box">
+                <form class="comments__form" action="" method="post">
+                    <textarea class="comments__textarea" name="" placeholder="Write your review here..."></textarea>
+                    <button class="comments__button" type="submit">Submit</button>
+                </form>
+
+                <div class="comments__container-emoji">
+                    <span class="comments__emoji">&#128512;</span>
+                    <span class="comments__emoji">&#128513;</span>
+                    <span class="comments__emoji">&#128548;</span>
+                    <span class="comments__emoji">&#128522;</span>
+                    <span class="comments__emoji">&#128546;</span>
+                    <span class="comments__emoji">&#128526;</span>
+                    <span class="comments__emoji">&#128530;</span>
+                </div>
+            </div>
+
+            <div class="comments__container-comments">
+                <div class="comments__cont-comment">
+                    <div class="comments__container-left">
+                        <div class="comments__container-profile">
+                            <img class="comments__img-perfil" src="img/user.png" width="50" alt="foto perfil">
+                            <span class="comments__nome-perfil">bruhperson</span>
+                        </div>
+
+                        <p class="comments__comet">Re-Watched it 7 times and counting. I guess I liked it.</p>
+                    </div>
+
+                    <div class="comments__container-right">
+                        <span class="comments__nota">9/10</span>
+                        <span class="comments__data">12 Oct 2019</span>
+                    </div>
+                </div>
+
+                <div class="comments__exibir-mais">More &#129139;</div>
+            </div>
+        </div>
+
+    </section>
+
     <!-- JQuery -->
     <script src="./lib/owlCarousel/docs/assets/vendors/jquery.min.js"></script>
-    
+
     <script src="./js/index/mostrarInfoPerfil.js"></script>
     <script src="./js/index/mostrarNavHeaderResponsivo.js"></script>
     <script src="./js/index/headerDiminuirScroll.js"></script>
     <script src="./js/index/abrirVideoPrincipal.js"></script>
     <script type="module" src="./js/index/selectSeasons.js"></script>
     <script type="module" src="./js/index/owlCarouselSeasons.js"></script>
+    <script src="./js/index/owlCarouselMoreLikeThis.js"></script>
 
     <!-- VideoJs -->
     <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
@@ -351,76 +415,76 @@
 
     <!-- Style Indigo player -->
     <style>
-    .igui_container_controls {
-        color: #979797;
-        background-color: black;
-        height: 60px;
-        align-items: center;
-    }
-
-    .igui_container_controls_seekbar {
-        bottom: 60px;
-    }
-
-    .igui_seekbar_bars {
-        height: 15px;
-    }
-
-    .igui_icon_play,
-    .igui_icon_pause {
-        color: #979797;
-    }
-
-    .igui_seekbar_progress,
-    .igui_seekbar_scrubber {
-        background-color: rgb(255, 196, 0);
-    }
-
-    .igui_seekbar_scrubber {
-        box-shadow: 0 0 1px 1px rgb(53, 53, 53);
-    }
-
-    .igui_container_controls .igui_button {
-        margin-left: 6px;
-    }
-
-    .igui_container_controls .igui_button .igui_icon {
-        font-size: 36px;
-    }
-
-    .igui_volumebar_scrubber,
-    .igui_volumebar_progress {
-        background-color: rgb(255, 196, 0);
-    }
-
-    .igui_volumebar_scrubber {
-        box-shadow: 0 0 1px 1px rgb(53, 53, 53);
-    }
-
-
-    @media screen and (max-width: 500px) {
         .igui_container_controls {
-            height: 40px;
+            color: #979797;
+            background-color: black;
+            height: 60px;
+            align-items: center;
         }
 
         .igui_container_controls_seekbar {
-            bottom: 40px;
+            bottom: 60px;
+        }
+
+        .igui_seekbar_bars {
+            height: 15px;
+        }
+
+        .igui_icon_play,
+        .igui_icon_pause {
+            color: #979797;
+        }
+
+        .igui_seekbar_progress,
+        .igui_seekbar_scrubber {
+            background-color: rgb(255, 196, 0);
+        }
+
+        .igui_seekbar_scrubber {
+            box-shadow: 0 0 1px 1px rgb(53, 53, 53);
+        }
+
+        .igui_container_controls .igui_button {
+            margin-left: 6px;
         }
 
         .igui_container_controls .igui_button .igui_icon {
-            font-size: 26px;
+            font-size: 36px;
         }
 
-        .main__section-serie__header__video-fixed__playerContainer {
-            width: 90%;
+        .igui_volumebar_scrubber,
+        .igui_volumebar_progress {
+            background-color: rgb(255, 196, 0);
         }
-    }
+
+        .igui_volumebar_scrubber {
+            box-shadow: 0 0 1px 1px rgb(53, 53, 53);
+        }
+
+
+        @media screen and (max-width: 500px) {
+            .igui_container_controls {
+                height: 40px;
+            }
+
+            .igui_container_controls_seekbar {
+                bottom: 40px;
+            }
+
+            .igui_container_controls .igui_button .igui_icon {
+                font-size: 26px;
+            }
+
+            .main__section-serie__header__video-fixed__playerContainer {
+                width: 90%;
+            }
+        }
     </style>
 
     <!-- Owl carousel -->
     <script src="./lib/owlCarousel/docs/assets/owlcarousel/owl.carousel.js"></script>
     <script src="./js/index/iniciarOwlCarousel.js"></script>
-    
+
 </body>
 
 </html>

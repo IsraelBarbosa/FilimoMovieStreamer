@@ -1,5 +1,5 @@
 
-let owlCarousel = document.querySelectorAll(".owl-carousel");
+let owlCarousel = document.querySelectorAll(".owl-carousel-seasion");
 
 
 
@@ -135,7 +135,7 @@ function createEpisodiosSeasionDom(seasionObj) {
 
     // Codigo que esta sendo criado
     /* 
-    <div class="item">
+    <div class="owl-carousel-seasion__item item">
         <figure class="item__img-capa-episodio">
             <img src="./img/Breaking-Bad.png" alt="Capa episodio 1">
             <figcaption>Episode 1</figcaption>
@@ -150,6 +150,7 @@ function createEpisodiosSeasionDom(seasionObj) {
         console.log(episodiosObject[episodioObj]);
 
         let itemOwlCarousel = document.createElement("div");
+        itemOwlCarousel.classList.add("owl-carousel-seasion__item");
         itemOwlCarousel.classList.add("item");
 
         let figure = document.createElement("figure");
@@ -178,13 +179,13 @@ function createEpisodiosSeasionDom(seasionObj) {
  * Remove os itens do Own Caroseul e destroi o owl caroseul
  */
 function removeAllItensAndDestroyOwnCaroseul() {
-    var itemLengthOwnCaroseul = $('.item').length;
+    var itemLengthOwnCaroseul = $('.owl-carousel-seasion__item').length;
 
     for (var i = 0; i < itemLengthOwnCaroseul; i++) {
-        $(".owl-carousel").trigger('remove.owl.carousel', [i]).trigger('refresh.owl.carousel');
+        $(".owl-carousel-seasion").trigger('remove.owl.carousel', [i]).trigger('refresh.owl.carousel');
     }
 
-    $('.owl-carousel').trigger('destroy.owl.carousel');
+    $('.owl-carousel-seasion').trigger('destroy.owl.carousel');
 }
 
 
@@ -192,7 +193,7 @@ function removeAllItensAndDestroyOwnCaroseul() {
  * Inicia o owl carousel
  */
 function startOwlCarousel() {
-    $(".owl-carousel").owlCarousel({
+    $(".owl-carousel-seasion").owlCarousel({
         nav: true,
         items: 5,
         dots: false,

@@ -99,7 +99,7 @@ function closeAllSelect(elmnt) {
     }
 
     // Muda as fotos own Slide
-    if (getSelectValueNoPrimeiroCrick !== 1) {
+    if (getSelectValueNoPrimeiroCrick !== false) {
         selectSesion(y[0].innerHTML)
         console.log(y[0].innerHTML);
     }

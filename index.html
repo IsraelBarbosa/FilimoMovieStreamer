@@ -30,181 +30,150 @@
     <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.css">
 
-    <link rel="stylesheet" href="./css/style.css">
+    
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/responsiveStyle.css">
-</head>
 
 <body>
 
     <div class="container-header-e-main">
-        <!-- FIXED  -->
-        <div class="icon-menu-container">
-            <span class="material-icons icon-menu-container__icon">menu</span>
-        </div>
-
-        <!-- FIXED  -->
-        <nav class="nav-header-fixed">
-            <div class="nav-header-fixed__container-icon-menu">
-                <span class="material-icons nav-header-fixed__icon-menu">menu</span>
-            </div>
-
-            <div class="container__search-fixed">
-                <form class="nav-header-fixed__form" action="">
-                    <div class="nav-header-fixed__form__container">
-                        <input class="nav-header-fixed__form__input" type="search">
-                        <button class="nav-header-fixed__form__input__button" type="submit" title="Pesquisar">
-                            <img class="nav-header-fixed__form__input__button__img" src="./img/search.svg"
-                                alt="Buscar filme">
-                        </button>
-                    </div>
-                </form>
-            </div>
-
-            <ul class="nav-header-fixed__lista">
-                <li class="nav-header-fixed__lista__item">
-                    <a class="nav-header-fixed__lista__item__link" href="#">Home</a>
-                </li>
-                <li class="nav-header-fixed__lista__item">
-                    <a class="nav-header-fixed__lista__item__link" href="#">Movie & Series</a>
-                </li>
-                <li class="nav-header-fixed__lista__item">
-                    <a class="nav-header-fixed__lista__item__link" href="#">Live</a>
-                </li>
-                <li class="nav-header-fixed__lista__item">
-                    <a class="nav-header-fixed__lista__item__link" href="#">Popular</a>
-                </li>
-                <li class="nav-header-fixed__lista__item">
-                    <a class="nav-header-fixed__lista__item__link" href="#">My List</a>
-                </li>
-            </ul>
-        </nav>
-
         <img class="img-serie_background" src="img/serie_background.png" alt="Imagem de fundo da série">
 
-        <header class="header">
-            <div class="header__container">
-                <a class="header__link-logo" href="#">
-                    <img class="header__link-logo__logo" src="./img/logoFilimo.png" alt="Logo Filimo">
-                </a>
+        <header class="layout-header">
+            <div class="container">
 
-                <nav class="header__nav">
-                    <ul class="header__nav__lista">
-                        <li class="header__nav__lista__item">
-                            <a class="header__nav__lista__item__link" href="#">Home</a>
-                        </li>
-                        <li class="header__nav__lista__item">
-                            <a class="header__nav__lista__item__link" href="#">Movie & Series</a>
-                        </li>
-                        <li class="header__nav__lista__item">
-                            <a class="header__nav__lista__item__link" href="#">Live</a>
-                        </li>
-                        <li class="header__nav__lista__item">
-                            <a class="header__nav__lista__item__link" href="#">Popular</a>
-                        </li>
-                        <li class="header__nav__lista__item">
-                            <a class="header__nav__lista__item__link" href="#">My List</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="header">
+                    <!-- Fixed icon -->
+                    <span class="material-icons header__icon-menu">menu</span>
 
-                <div class="container__search-e-perfil">
-                    <form class="header__form" action="">
-                        <div class="header__form__container">
-                            <input class="header__form__input" type="search">
-                            <button class="header__form__input__button" type="submit" title="Pesquisar">
-                                <img class="header__form__input__button__img" src="./img/search.svg" alt="Buscar filme">
-                            </button>
+                    <a class="header__link-logo" href="#">
+                        <img  class="header__link-logo__logo" src="./img/logoFilimo.png" alt="Logo Filimo"> 
+                        <img  class="header__link-logo__logo-responsive" src="./img/logoFilimoResponsivo.png" alt="Logo Filimo">                     
+                    </a>
+
+                    <nav class="header__nav">
+                        <span class="material-icons header__nav__icon">close</span>
+                        <ul class="header__nav__lista">
+                            <li class="header__nav__lista__item">
+                                <a class="header__nav__lista__item__link" href="#">Home</a>
+                            </li>
+                            <li class="header__nav__lista__item">
+                                <a class="header__nav__lista__item__link" href="#">Movie & Series</a>
+                            </li>
+                            <li class="header__nav__lista__item">
+                                <a class="header__nav__lista__item__link" href="#">Live</a>
+                            </li>
+                            <li class="header__nav__lista__item">
+                                <a class="header__nav__lista__item__link" href="#">Popular</a>
+                            </li>
+                            <li class="header__nav__lista__item">
+                                <a class="header__nav__lista__item__link" href="#">My List</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="container__search-e-perfil">
+                        <form class="header__form" action="">
+                            <div class="header__form__container">
+                                <input class="header__form__input" type="search">
+                                <button class="header__form__input__button" type="submit" title="Pesquisar">
+                                    <img class="header__form__input__button__img" src="./img/search.svg"
+                                        alt="Buscar filme">
+                                </button>
+                            </div>
+                        </form>
+
+                        <div class="container-perfil">
+                            <img class="header__foto-perfil" src="./img/img_avatar.png" alt="Foto do perfil">
+                            <nav class="header__nav-perfil">
+                                <ul class="header__nav-perfil__lista">
+                                    <li class="header__nav-perfil__lista__item">
+                                        <a class="header__nav-perfil__lista__item__link" href="#">Meu perfil</a>
+                                    </li>
+                                    <li class="header__nav-perfil__lista__item">
+                                        <a class="header__nav-perfil__lista__item__link" href="#">Editar perfil</a>
+                                    </li>
+                                    <li class="header__nav-perfil__lista__item">
+                                        <a class="header__nav-perfil__lista__item__link" href="#">Meus filmes
+                                            favoritosfffddd</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
-                    </form>
-
-                    <div class="container-perfil">
-                        <img class="header__foto-perfil" src="./img/img_avatar.png" alt="Foto do perfil">
-                        <nav class="header__nav-perfil">
-                            <ul class="header__nav-perfil__lista">
-                                <li class="header__nav-perfil__lista__item">
-                                    <a class="header__nav-perfil__lista__item__link" href="#">Meu perfil</a>
-                                </li>
-                                <li class="header__nav-perfil__lista__item">
-                                    <a class="header__nav-perfil__lista__item__link" href="#">Editar perfil</a>
-                                </li>
-                                <li class="header__nav-perfil__lista__item">
-                                    <a class="header__nav-perfil__lista__item__link" href="#">Meus filmes
-                                        favoritosfffddd</a>
-                                </li>
-                            </ul>
-                        </nav>
                     </div>
                 </div>
+
             </div>
         </header>
 
-        <section class="main">
-            <section class="main__section-serie">
-                <header class="main__section-serie__header">
+        <section class="layout-main">
+            <div class="container  container--medium  container--responsive">
+
+                <section class="main">
                     <div class="container-img-e-info-serie">
                         <!-- FIXED -->
-                        <div class="main__section-serie__header__video-fixed">
-                            <button class="main__section-serie__header__video-fixed__button-absolute">
+                        <div class="main__video-fixed">
+                            <button class="main__video-fixed__button-absolute">
                                 <span class="material-icons">
                                     arrow_back
                                 </span>Voltar
                             </button>
-                            <div class="main__section-serie__header__video-fixed__playerContainer" id="playerContainer">
+                            <div class="main__video-fixed__playerContainer" id="playerContainer">
                             </div>
                         </div>
 
-                        <img class="main__section-serie__header__img-capa-da-serie" src="img/serie_capa.png"
+                        <img class="main__img-capa-da-serie" src="img/serie_capa.png"
                             alt="Capa da serie breaking bad">
 
                         <div class="container-info-serie">
-                            <h1 class="main__section-serie__header__titulo">Breaking Bad: S3 E6</h1>
-                            <h2 class="main__section-serie__header__sub-titulo">Series</h2>
+                            <h1 class="main__titulo">Breaking Bad: S3 E6</h1>
+                            <h2 class="main__sub-titulo">Series</h2>
 
-                            <div class="main__section-serie__header__classificacao">
-                                <span class="main__section-serie__header__classificacao__nota">9.4</span>
-                                <span class="main__section-serie__header__classificacao__estrelas">
+                            <div class="main__classificacao">
+                                <span class="main__classificacao__nota">9.4</span>
+                                <span class="main__classificacao__estrelas">
                                     <span
-                                        class="material-icons main__section-serie__header__classificacao__estrelas__estrela">
+                                        class="material-icons main__classificacao__estrelas__estrela">
                                         star
                                     </span>
                                     <span
-                                        class="material-icons main__section-serie__header__classificacao__estrelas__estrela">
+                                        class="material-icons main__classificacao__estrelas__estrela">
                                         star
                                     </span>
                                     <span
-                                        class="material-icons main__section-serie__header__classificacao__estrelas__estrela">
+                                        class="material-icons main__classificacao__estrelas__estrela">
                                         star
                                     </span>
                                     <span
-                                        class="material-icons main__section-serie__header__classificacao__estrelas__estrela">
+                                        class="material-icons main__classificacao__estrelas__estrela">
                                         star
                                     </span>
                                     <span
-                                        class="material-icons main__section-serie__header__classificacao__estrelas__estrela">
+                                        class="material-icons main__classificacao__estrelas__estrela">
                                         star
                                     </span>
                                 </span>
-                                <span class="main__section-serie__header__classificacao__IMDB">
-                                    <span class="main__section-serie__header__classificacao__IMDB__nota">9.5/10</span>
-                                    <img class="main__section-serie__header__classificacao__IMDB__img"
+                                <span class="main__classificacao__IMDB">
+                                    <span class="main__classificacao__IMDB__nota">9.5/10</span>
+                                    <img class="main__classificacao__IMDB__img"
                                         src="./img/IMDb.png">
                                 </span>
                             </div>
 
-                            <div class="main__section-serie__header__container-tempo">
-                                <span class="main__section-serie__header__tempo">43 Minutes</span> -
-                                <span class="main__section-serie__header__pais">USA</span>
+                            <div class="main__container-tempo">
+                                <span class="main__tempo">43 Minutes</span> -
+                                <span class="main__pais">USA</span>
                             </div>
 
-                            <div class="main__section-serie__header__container-caracteristicas">
-                                <div class="main__section-serie__header__caracteristica">Action</div>
-                                <div class="main__section-serie__header__caracteristica">Crime</div>
-                                <div class="main__section-serie__header__caracteristica">Drama</div>
-                                <div class="main__section-serie__header__caracteristica">Fantasy</div>
-                                <div class="main__section-serie__header__caracteristica">Thriller</div>
+                            <div class="main__container-caracteristicas">
+                                <div class="main__caracteristica">Action</div>
+                                <div class="main__caracteristica">Crime</div>
+                                <div class="main__caracteristica">Drama</div>
+                                <div class="main__caracteristica">Fantasy</div>
+                                <div class="main__caracteristica">Thriller</div>
                             </div>
 
-                            <p class="main__section-serie__header__sinopse">
+                            <p class="main__sinopse">
                                 A high school chemistry teacher diagnosed with inoperable
                                 lung cancer turns to manufacturing and selling methamphetamine
                                 in order to secure his family's future.
@@ -212,50 +181,59 @@
                         </div>
                     </div>
 
-                    <hr class="main__section-serie__header__hr">
+                    <hr class="main__hr">
+                
+                    <div class="container-botoes-serie">
+                        <div class="container-botoes-default">
+                            <button
+                                class="main__botao main__botao--amarelo">
+                                <span class="principais__btn-text">Play</span>
 
-                    <div class="container-botoes-serie-main">
-                        <div class="container-botoes-serie">
-                            <div class="container-botoes-serie__principais">
-                                <button
-                                    class="main__section-serie__header__botao main__section-serie__header__botao--amarelo">Play
-                                    <span class="material-icons main__section-serie__header__botao__icon">
-                                        play_arrow
-                                    </span>
-                                </button>
-                                <button class="main__section-serie__header__botao">Add to Wishlist
-                                    <span class="material-icons main__section-serie__header__botao__icon">
-                                        turned_in_not
-                                    </span>
-                                </button>
-                                <button class="main__section-serie__header__botao">Download
-                                    <span class="material-icons main__section-serie__header__botao__icon">
-                                        file_download
-                                    </span>
-                                </button>
-                            </div>
+                                <span class="material-icons main__botao__icon">
+                                    play_arrow
+                                </span>
+                            </button>
 
-                            <button class="main__section-serie__header__botao">Your rate
-                                <span class="material-icons main__section-serie__header__botao__icon">
-                                    star_border
+                            <button class="main__botao">
+                                <span class="principais__btn-text">Add to Wishlist</span>
+
+                                <span class="material-icons main__botao__icon">
+                                    turned_in_not
                                 </span>
-                                <span class="material-icons main__section-serie__header__botao__icon">
-                                    star_border
-                                </span>
-                                <span class="material-icons main__section-serie__header__botao__icon">
-                                    star_border
-                                </span>
-                                <span class="material-icons main__section-serie__header__botao__icon">
-                                    star_border
-                                </span>
-                                <span class="material-icons main__section-serie__header__botao__icon">
-                                    star_border
+                            </button>
+
+                            <button class="main__botao">
+                                <span class="principais__btn-text">Download</span>
+
+                                <span class="material-icons main__botao__icon">
+                                    file_download
                                 </span>
                             </button>
                         </div>
+
+                        <button class="main__botao">
+                           <span class="principais__btn-text">Your rate</span>
+                        
+                            <span class="material-icons main__botao__icon">
+                                star_border
+                            </span>
+                            <span class="material-icons main__botao__icon">
+                                star_border
+                            </span>
+                            <span class="material-icons main__botao__icon">
+                                star_border
+                            </span>
+                            <span class="material-icons main__botao__icon">
+                                star_border
+                            </span>
+                            <span class="material-icons main__botao__icon">
+                                star_border
+                            </span>
+                        </button>
                     </div>
-                </header>
-            </section>
+                </section>
+
+            </div>
         </section>
     </div>
 
@@ -399,9 +377,11 @@
     <!-- JQuery -->
     <script src="./lib/owlCarousel/docs/assets/vendors/jquery.min.js"></script>
 
+    <script src="./js/index/global.js"></script>
     <script src="./js/index/mostrarInfoPerfil.js"></script>
     <script src="./js/index/mostrarNavHeaderResponsivo.js"></script>
     <script src="./js/index/headerDiminuirScroll.js"></script>
+    <script src="./js/index/abrirInputTextSearch.js"></script>
     <script src="./js/index/abrirVideoPrincipal.js"></script>
     <script type="module" src="./js/index/selectSeasons.js"></script>
     <script type="module" src="./js/index/owlCarouselSeasons.js"></script>
@@ -475,7 +455,7 @@
                 font-size: 26px;
             }
 
-            .main__section-serie__header__video-fixed__playerContainer {
+            .main__video-fixed__playerContainer {
                 width: 90%;
             }
         }

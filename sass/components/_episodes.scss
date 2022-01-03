@@ -1,0 +1,187 @@
+/* EPISODES */
+.episodes {
+    max-width: 1200px;
+    margin: 50px auto 90px auto;
+}
+
+.episodes__titulo {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    padding: 0 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.episodes__titulo::before,
+.episodes__titulo::after {
+    content: "___";
+    font-weight: bold;
+    position: absolute;
+    top: -38%;
+}
+
+.episodes__titulo::before {
+    left: 0%;
+}
+
+.episodes__titulo::after {
+    left: 153px;
+}
+
+.container-select-episode {
+    display: flex;
+}
+
+/* Seasons */
+.seasons {
+    width: 20%;
+}
+
+.seasons__container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seasons__container hr {
+    width: 50%;
+    color: white;
+    border: none;
+    border-top: 0.5px solid white;
+    position: absolute;
+    top: 41%;
+    right: 0%;
+    z-index: -1;
+}
+
+/* Select */
+.seasons__select-personalized {
+    width: 60px;
+  position: relative;
+  font-family: Arial;
+  margin-bottom: 20px;
+}
+
+.seasons__select-personalized select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+    z-index: 1;
+    position: relative;
+  background-color: rgb(68, 68, 68);
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-items div {
+    height: 30px;
+}
+
+.select-items div:first-child {
+    height: 35px;
+    padding-top: 5px;
+}
+
+.select-selected {
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: rgb(68, 68, 68);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.seasons__desc-seasons {
+    font-size: 20px;
+    color: white;
+}
+
+/* Own carroseul */
+.owl-carousel {
+    width: 80%;
+}
+
+.owl-nav {
+    position: absolute;
+    top: -70px;
+    right: 20px;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF57;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    margin-right: 10px;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+    background-color: white;
+    border: 1px solid #6b6b6b;
+}
+
+span[aria-label="Previous"],
+span[aria-label="Next"] {
+    font-size: 28px;
+    color: white;
+    position: relative;
+    top: -7px;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover span[aria-label="Previous"],
+.owl-carousel .owl-nav button.owl-next:hover span[aria-label="Next"] {
+    color: rgb(114, 114, 114);
+}
+
+.owl-carousel-seasion__item {
+    width: 168px;
+    /* background-color: brown; */
+}
+
+.item__img-capa-episodio img {
+    margin-bottom: 10px;
+}
+
+.item__img-capa-episodio figcaption {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}

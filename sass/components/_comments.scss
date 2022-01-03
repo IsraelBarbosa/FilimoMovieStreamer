@@ -1,0 +1,151 @@
+/* COMMENTS */
+.comments {
+    max-width: 1200px;
+    margin: 50px auto 90px auto;
+}
+
+.comments__titulo {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    padding: 0 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.comments__titulo::before,
+.comments__titulo::after {
+    content: "___";
+    font-weight: bold;
+    position: absolute;
+    top: -38%;
+}
+
+.comments__titulo::before {
+    left: 0%;
+}
+
+.comments__titulo::after {
+    left: 165px;
+}
+
+.comments__container-box-e-comments {
+    display: flex;
+}
+
+.comments__container-box {
+    position: relative;
+    width: 30%;
+    height: 250px;
+}
+
+.comments__textarea {
+    width: 100%;
+    height: 210px;
+    font-family: 'PT Sans', sans-serif;
+    color: #91908e;
+    background-color: #54514e;
+    resize: none;
+    border: none;
+    padding: 25px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.comments__button {
+    padding: 8px 20px;
+    color: #fff;
+    background-color: #FCC537;
+    border: none;
+    border-radius: 5px;
+}
+
+.comments__container-emoji {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    width: 90%;
+    transform: translateX(5%);
+    display: flex;
+}
+
+.comments__emoji {
+    display: inline-block;
+    font-size: 27px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.comments__emoji:last-child {
+    margin-right: 0px;
+}
+
+
+.comments__container-comments {
+    width: 66%;
+    margin-left: 4%;
+}
+
+.comments__cont-comment {
+    padding: 18px 25px;
+    border-radius: 10px;
+    background-color: #54514e;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.comments__container-left {
+    width: 80%;
+}
+
+.comments__container-profile {
+    display: flex;
+    align-items: center;
+}
+
+.comments__img-perfil {
+    width: 48px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+}
+
+.comments__nome-perfil {
+    font-size: 14px;
+    color: #B8B8B8;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.comments__comet {
+    color: #fff;
+    margin: 20px 0 0 8%;
+}
+
+.comments__container-right {
+    width: 20%;
+    border-left: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.comments__nota {
+    color: #FCC537;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.comments__data {
+    color: #fff;
+    font-size: 13px;
+}
+
+.comments__exibir-mais {
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}

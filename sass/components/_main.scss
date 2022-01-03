@@ -1,0 +1,255 @@
+@import '../base/_colors';
+@import '../base/_typography';
+@import '../sass-utils/_global';
+
+.main {
+    @media screen and (max-width: 31.25rem) {
+        margin-top: 150px;
+    }
+}
+
+/* Serie */
+.container-img-e-info-serie {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 54.6875rem) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Video fixed */
+.main__video-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+
+    background-image: linear-gradient(to right bottom, #010711, #004055, #007e73, #38bb58, #e7e700);
+    animation: mostrarVideoFixed .5s forwards;
+}
+
+@keyframes mostrarVideoFixed {
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
+
+.main__video-fixed__playerContainer {
+    width: 80%;
+    margin-top: 60px;
+}
+
+.main__video-fixed__button-absolute {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+
+    display: flex;
+    align-items: center;
+    border: 0;
+
+    color: $amarelo-escuro;
+    background-color: transparent;
+
+    font-size: 1.2rem;
+    
+    cursor: pointer;
+
+    @media screen and (max-width: 31.25rem) {
+        font-size: 1rem;
+    }
+}
+
+.main__video-fixed__button-absolute > span {
+    font-size: 2rem;
+
+    @media screen and (max-width: 31.25rem) {
+        font-size: 1.4rem;
+    }
+}
+
+.main__img-capa-da-serie {
+    max-width: 100%;
+    width: 30.9rem;
+    height: 46.6rem;
+    margin-right: 24px;
+    border-radius: 20px;
+
+    object-fit: cover;
+
+    @media screen and (max-width:43.75rem) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.main__titulo {
+    margin-bottom: 18px;
+
+    color: white;
+
+    font-size: 3.6rem;
+    font-weight: 400;
+}
+
+.main__sub-titulo {
+    margin-bottom: 15px;
+
+    color: white;
+
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.main__classificacao__nota {
+    display: inline-block;
+    margin-right: 10px;
+
+    color: $amarelo-escuro;
+
+    font-size: 2.8rem;
+}
+
+.main__classificacao__estrelas {
+    margin-right: 30px;
+}
+
+.main__classificacao__estrelas__estrela {
+    display: inline-block;
+    margin-right: -3px;
+
+    color: $amarelo-escuro;
+
+    font-size: 1.6rem;
+   
+    vertical-align: baseline;
+}
+
+.main__classificacao__IMDB {
+    padding: 4px 4px; 
+    border-radius: 5px;
+
+    background-color: $amarelo-escuro;
+}
+
+.main__classificacao__IMDB__nota {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.main__classificacao__IMDB__img {
+    width: 3.3rem;
+    height: 1.6rem;
+
+    vertical-align: middle;
+}
+
+.main__container-tempo {
+    margin-top: 12px;
+    
+    color: white;
+}
+
+.main__tempo {
+    color: white;
+
+    font-size: 1.6rem;
+}
+
+.main__pais {
+    color: white;
+
+    font-size: 1.6rem;
+}
+
+.main__container-caracteristicas {
+    margin-top: 15px;
+    display: flex;
+
+    @media screen and (max-width: 75rem){
+        flex-wrap: wrap;
+    }
+}
+
+.main__caracteristica {
+    padding: 8px 24px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+
+    color: white;
+    background-color: rgba(255, 255, 255, 0.253);
+
+    font-size: 1.4rem;
+}   
+
+.main__caracteristica:last-child {
+    margin-right: 0;
+}
+
+.main__sinopse {
+    max-width: 80%;
+    margin-top: 20px;
+    
+    color: white;
+
+    font-size: 1.6rem;
+
+    @media screen and (max-width: 75rem) {
+        max-width: 100%;
+    }
+}
+
+/* Hr */
+.main__hr {
+    margin-bottom: 30px;
+    border-width: 1px;
+
+    color: rgba(255, 255, 255, 0.287);
+}
+
+/* Container botoes serie */
+.container-botoes-serie {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-botoes-serie .main__botao {
+    font-size: 1.7rem;
+}
+
+.container-botoes-serie > .main__botao {
+    margin-right: 0;
+
+    @media screen and (max-width: 31.0625rem) {
+        margin-top: 30px;
+    }
+}
+
+.container-botoes-serie > .main__botao > .main__botao__icon {
+    margin-left: -6px;
+
+    color: $amarelo-escuro;
+}
+
+.container-botoes-serie > .main__botao > .principais__btn-text + .main__botao__icon {
+    margin-left: 0;
+}
+
+.container-botoes-default {
+    margin-right: 50px;
+}
+
+.principais__btn-text {
+    @media screen and (max-width: 50.25rem){
+        display: none;
+    }
+}

@@ -1,6 +1,6 @@
-const btnPlayVideo = document.querySelector(".main__section-serie__header__botao");
-const btnVoltarVideo = document.querySelector(".main__section-serie__header__video-fixed__button-absolute");
-const playerVideo = document.querySelector(".main__section-serie__header__video-fixed");
+const btnPlayVideo = document.querySelector(".main__botao");
+const btnVoltarVideo = document.querySelector(".main__video-fixed__button-absolute");
+const playerVideo = document.querySelector(".main__video-fixed");
 
 
 

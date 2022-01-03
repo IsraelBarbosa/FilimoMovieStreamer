@@ -1,4 +1,4 @@
-const header = document.querySelector(".header");
+const layoutHeaderFixed = document.querySelector(".layout-header");
 let prevScrollpos = window.pageYOffset;
 
 
@@ -12,9 +12,9 @@ function diminuirHeightHeader() {
     let currentScrollPos = window.pageYOffset;
 
     if (prevScrollpos > currentScrollPos) {
-        header.style.top = "0";
+       layoutHeaderFixed.style.top = "0";
     } else {
-        header.style.top = "-90px";
+        layoutHeaderFixed.style.top = "-7.3rem";
     }
 
     prevScrollpos = currentScrollPos;
@@ -27,8 +27,8 @@ function setHeaderTransparent() {
     const pageYOffset = window.pageYOffset;
 
     if (pageYOffset === 0) {
-        header.style.backgroundColor = "transparent";
+        layoutHeaderFixed.style.backgroundColor = "transparent";
     } else {
-        header.style.backgroundColor = "rgb(41, 41, 41)";
+        layoutHeaderFixed.style.backgroundColor = "#0090C4";
     }
 }

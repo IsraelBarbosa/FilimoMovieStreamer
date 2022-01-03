@@ -1,32 +1,7 @@
-@media screen and (max-width: 1845px) {
-    /* HEADER */
-    .header__nav-perfil {
-        left: -140px;
-        transform: translateX(0);
-    }
 
-    .header__nav-perfil::before {
-        left: 89%;
-    }
-}
 
 @media screen and (max-width: 1200px) {
-    /* SECTION MAIN */
-    .main {
-        padding: 0 30px;
-    }
-
-    .main__section-serie__header__container-caracteristicas {
-        flex-wrap: wrap;
-    }
-
-    .main__section-serie__header__caracteristica {
-        margin-bottom: 20px;
-    }
-
-    .main__section-serie__header__sinopse {
-        max-width: 100%;
-    }
+  
 
 
     /* SECTION ABOUT */
@@ -48,41 +23,6 @@
     /* MORE LIKE THIS */
     .more-like-this {
         padding: 0 30px;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    /* FIXED */
-    .icon-menu-container {
-        display: block;
-    }
-
-    .nav-header-fixed  {
-        display: flex;
-    }
-
-
-    /* HEADER */
-    .header__container {
-        justify-content: center;
-    }
-
-    .header__nav {
-        display: none;
-    }
-
-    .container__search-e-perfil {
-        width: auto;
-    }
-
-    .header__form {
-        display: none;
-    }
-
-    .container-perfil {
-        position: absolute;
-        top: 24px;
-        right: 30px;
     }
 }
 
@@ -108,60 +48,6 @@
 
 @media screen and (max-width: 800px) {
     /* MAIN */
-    /* Container botoes serie */
-    .container-botoes-serie-main {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .container-botoes-serie-main::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: -20px;
-        width: 10px;
-        height: 100%;
-        color: rgb(0, 0, 0);
-        box-shadow: -24px 0 15px 10px rgb(255, 255, 255);
-    }
-
-    .container-botoes-serie {
-        overflow-x: scroll;
-    }
-
-    .container-botoes-serie::-webkit-scrollbar {
-       height: 10px;
-    }
-
-    /* Track */
-    ::-webkit-scrollbar-track {
-        background: #003b0a;
-    }
-
-    /* Handle */
-    .container-botoes-serie::-webkit-scrollbar-thumb {
-        background: rgb(3, 50, 111); 
-        border-radius: 20px;
-    }
-
-    .container-botoes-serie::-webkit-scrollbar-thumb:hover {
-        background: rgb(0, 25, 58); 
-    }
-
-    .container-botoes-serie__principais {
-        /* background-color: rgb(142, 165, 42); */
-    }
-
-    .main__section-serie__header__botao {
-        white-space: nowrap;
-    }
-
-    .container-botoes-serie__principais + .main__section-serie__header__botao:last-child {
-        margin-left: 80px;
-        margin-right: 40px;
-    }
-
 
     /* MORE LIKE THIS */
     .owl-carousel-more-like-this {
@@ -171,19 +57,6 @@
 }
 
 @media screen and (max-width: 700px) {
-    /* MAIN */
-    /* Serie */
-    .container-img-e-info-serie {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main__section-serie__header__img-capa-da-serie {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    
     /* EPISODES */
     .seasons {
         width: 40%;
@@ -227,46 +100,6 @@
 }
 
 @media screen and (max-width: 500px) {
-    /* FIXED */
-    .icon-menu-container {
-        left: 10px;
-    }
-
-
-    /* HEADER */
-    .header {
-	    padding: 0 10px;
-    }
-
-    .container-perfil {
-        top: 27px;
-        right: 10px;
-    }
-
-    .header__foto-perfil {
-        width: 35px;
-    }
-
-    .header__nav-perfil::before {
-	    left: 87%;
-    }  
-    
-    
-    /* MAIN */
-    .main {
-	    padding: 0 10px;
-        margin-top: 150px;
-    }
-
-    /* Video fixed */
-    .main__section-serie__header__video-fixed__button-absolute {
-        font-size: 1rem;
-    }
-
-    .main__section-serie__header__video-fixed__button-absolute > span {
-        font-size: 1.4rem;
-    }
-    
 
     /* ABOUT */
     .about {

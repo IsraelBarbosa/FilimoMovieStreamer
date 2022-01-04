@@ -238,45 +238,54 @@
     </div>
 
     <!-- ABOUT -->
-    <section class="about">
-        <h1 class="about__titulo">About</h1>
+    <section class="layout-about">
+        <div class="container  container--medium  container--responsive">
+            
+            <div class="about">
+                <h1 class="about__titulo">
+                    <span class="titulo__hifen-esq"></span> 
+                        About 
+                    <span class="titulo__hifen-dir"></span>
+                </h1>
+                <div class="container-thriller">
+                    <video id="my-video" class="video-js vjs-theme-city about__video-thriller" controls muted preload="auto"
+                        width="320" poster="./img/video_poster.png" data-setup='{ }'>
+                        <source src="./video/BreakingBadTrailer.mp4" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                    </video>
 
-        <div class="container-thriller">
-            <video id="my-video" class="video-js vjs-theme-city about__video-thriller" controls muted preload="auto"
-                width="320" poster="./img/video_poster.png" data-setup='{ }'>
-                <source src="./video/BreakingBadTrailer.mp4" type="video/mp4" />
-                <p class="vjs-no-js">
-                    To view this video please enable JavaScript, and consider upgrading to a
-                    web browser that
-                    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                </p>
-            </video>
+                    <div class="container-about-descricao">
+                        <div class="container-about-descricao__titulo-e-paragrafo">
+                            <h2 class="about__sub-titulo">Summery:</h2>
+                            <p class="about__paragrafo">
+                                A high school chemistry teacher diagnosed with inoperable lung cancer
+                                turns to manufacturing and selling methamphetamine in order to secure
+                                his family's future.
+                            </p>
+                        </div>
 
-            <div class="container-about-descricao">
-                <div class="container-about-descricao__titulo-e-paragrafo">
-                    <h2 class="about__sub-titulo">Summery:</h2>
-                    <p class="about__paragrafo">
-                        A high school chemistry teacher diagnosed with inoperable lung cancer
-                        turns to manufacturing and selling methamphetamine in order to secure
-                        his family's future.
-                    </p>
-                </div>
+                        <div class="container-about-descricao__titulo-e-paragrafo">
+                            <h2 class="about__sub-titulo">Creator:</h2>
+                            <p class="about__paragrafo">
+                                Vince Gilligan
+                            </p>
+                        </div>
 
-                <div class="container-about-descricao__titulo-e-paragrafo">
-                    <h2 class="about__sub-titulo">Creator:</h2>
-                    <p class="about__paragrafo">
-                        Vince Gilligan
-                    </p>
-                </div>
-
-                <div class="container-about-descricao__titulo-e-paragrafo">
-                    <h2 class="about__sub-titulo">Casts:</h2>
-                    <p class="about__paragrafo">
-                        Bryan Cranston , Anna Gunn , Aaron Paul , Dean Norris , Betsy Brandt , RJ Mitte
-                        Bob Odenkirk , Giancarlo Esposito , Jonathan Banks , Laura Fraser , Jesse Plemons
-                    </p>
+                        <div class="container-about-descricao__titulo-e-paragrafo">
+                            <h2 class="about__sub-titulo">Casts:</h2>
+                            <p class="about__paragrafo">
+                                Bryan Cranston , Anna Gunn , Aaron Paul , Dean Norris , Betsy Brandt , RJ Mitte
+                                Bob Odenkirk , Giancarlo Esposito , Jonathan Banks , Laura Fraser , Jesse Plemons
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 

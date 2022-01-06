@@ -26,13 +26,13 @@
     <script src="https://cdn.jsdelivr.net/npm/indigo-player@1/lib/indigo-player.js"></script>
     <link rel="stylesheet" href="./lib/indigoPlayer/css/indigoPlayer.css">
 
-    <!-- Owl carousel -->
-    <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.css">
-    <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.css">
+    <!-- Tiny slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.1/tiny-slider.css">
 
     
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/responsiveStyle.css">
+</head>
 
 <body>
 
@@ -290,34 +290,35 @@
     </section>
 
     <!-- EPISODES -->
-    <section class="episodes">
-        <h1 class="episodes__titulo">Episodes</h1>
+    <section class="layout-episodes">
+        <div class="container  container--medium  container--responsive">
 
-        <div class="container-select-episode">
-            <div class="seasons">
-                <div class="seasons__container">
-                    <div class="seasons__select-personalized">
-                        <select name="seasons" class="seasons__select">
-                            <option value="0">Selec</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
+            <div class="episodes">
+                <h1 class="episodes__titulo">
+                <span class="titulo__hifen-esq"></span>
+                    Episodes
+                <span class="titulo__hifen-dir"></span>
+                </h1>
+
+                <div class="container-select-episode-e-container-episodes-slider">
+                    <div class="container-select-episode">
+                        <div class="episodes__select-temporada-custom">
+                            <span class="select-temporada-custom__temporada-selecinada">1</span>
+                            
+                            <div class="select-temporada-custom__container-index-temporada">
+                                <span class="select-temporada-custom__index-temporada">1</span>
+                                <span class="select-temporada-custom__index-temporada">2</span>
+                                <span class="select-temporada-custom__index-temporada">3</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <hr>
-                    <span class="seasons__desc-seasons">Seasons</span>
+                    <div class="container-episodes-slider">
+                        <div class="episodes-slider"></div>
+                    </div>
                 </div>
             </div>
-
-            <div class="owl-carousel-seasion owl-carousel owl-theme">
-                <!-- <div class="owl-carousel-seasion__item item">
-                        <figure class="item__img-capa-episodio">
-                            <img src="./img/Breaking-Bad.png" alt="Capa episodio 1">
-                            <figcaption>Episode 1</figcaption>
-                        </figure> 
-                     </div> -->
-            </div>
+            
         </div>
     </section>
 
@@ -383,25 +384,22 @@
 
     </section>
 
-    <!-- JQuery -->
-    <script src="./lib/owlCarousel/docs/assets/vendors/jquery.min.js"></script>
 
-    <script src="./js/index/global.js"></script>
+
+    <script type="module" src="./js/index/global.js"></script>
     <script src="./js/index/mostrarInfoPerfil.js"></script>
     <script src="./js/index/mostrarNavHeaderResponsivo.js"></script>
     <script src="./js/index/headerDiminuirScroll.js"></script>
     <script src="./js/index/abrirInputTextSearch.js"></script>
     <script src="./js/index/abrirVideoPrincipal.js"></script>
-    <script type="module" src="./js/index/selectSeasons.js"></script>
-    <script type="module" src="./js/index/owlCarouselSeasons.js"></script>
-    <script src="./js/index/owlCarouselMoreLikeThis.js"></script>
+    <script type="module" src="./js/index/selectEpisodesCustom.js"></script>
+    
 
     <!-- VideoJs -->
     <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
 
     <!-- Indigo player -->
     <script src="./lib/indigoPlayer/js/indigoPlayer.js"></script>
-
     <!-- Style Indigo player -->
     <style>
         .igui_container_controls {
@@ -470,10 +468,9 @@
         }
     </style>
 
-    <!-- Owl carousel -->
-    <script src="./lib/owlCarousel/docs/assets/owlcarousel/owl.carousel.js"></script>
-    <script src="./js/index/iniciarOwlCarousel.js"></script>
-
+    <!-- Tiny slider -->
+    <script type="module" src="./js/index/tinySlide.js"></script>
+   
 </body>
 
 </html>

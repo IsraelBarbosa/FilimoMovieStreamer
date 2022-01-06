@@ -7,8 +7,6 @@ document.addEventListener("click", funcGlobal);
 function funcGlobal(event) {
     const tagClassName = [...event.target.classList];
 
-    console.log(event.target.tagName, tagClassName);
-
     
     const inputSearchIsBlock = inputSearch.style.display === "block" && 
     !tagClassName.includes("header__form__input") && 

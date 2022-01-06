@@ -2,36 +2,12 @@
     .episodes {
         padding: 0 30px;    
     }
-
-    /* MORE LIKE THIS */
-    .more-like-this {
-        padding: 0 30px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    /* MORE LIKE THIS */
-    .owl-carousel-more-like-this {
-        width: 80%;
-        margin: 0 auto;
-    }
 }
 
 @media screen and (max-width: 700px) {
     /* EPISODES */
     .seasons {
         width: 40%;
-    }
-
-    /* owl carousel */
-    .owl-carousel {
-        width: 60%;
-    }
-
-
-    /* MORE LIKE THIS */
-    .owl-carousel-more-like-this {
-        width: 90%;
     }
 }
 
@@ -40,35 +16,11 @@
     .seasons {
         width: 50%;
     }
-
-    /* owl carousel */
-    .owl-carousel {
-        width: 50%;
-    }
-
-
-    /* MORE LIKE THIS */
-    .owl-carousel-more-like-this {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 530px) {
-    /* MORE LIKE THIS */
-    .owl-carousel-more-like-this {
-      max-width: 205px;
-    }
 }
 
 @media screen and (max-width: 500px) {
     /* EPISODES */ 
     .episodes {
-        padding: 0 10px;
-    }
-
-
-    /* MORE LIKE THIS */
-    .more-like-this {
         padding: 0 10px;
     }
 }
@@ -77,9 +29,5 @@
     /* EPISODES */
     .seasons {
         width: 40%;
-    }
-    /* owl carousel */
-    .owl-carousel {
-        width: 60%;
     }
 }

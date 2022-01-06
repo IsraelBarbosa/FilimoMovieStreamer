@@ -1,7 +1,7 @@
 import { selectSesion } from "./temporadasTinySlide.js";
 
 
-
+// Inicia tinySlide
 window.addEventListener("load", selectSesion(1));
 
 const indexTemporadaSelecionada = document.querySelector(".select-temporada-custom__temporada-selecinada");

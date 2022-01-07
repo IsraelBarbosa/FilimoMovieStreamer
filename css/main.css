@@ -8,9 +8,10 @@
 /* line 3, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/base/_body.scss */
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-/* line 7, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/base/_body.scss */
+/* line 9, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/base/_body.scss */
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 1.6rem;
@@ -78,6 +79,12 @@ body {
 /* line 1, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/layout/_comments.scss */
 .layout-comments {
   margin: 50px auto 90px auto;
+}
+
+/* line 1, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/layout/_footer.scss */
+.layout-footer {
+  margin: 50px auto 90px auto;
+  background-color: #6a6454;
 }
 
 /* line 1, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_botao.scss */
@@ -1236,6 +1243,161 @@ button[data-controls="next"] > span {
   color: #fff;
   text-align: center;
   cursor: pointer;
+}
+
+/* line 1, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.footer {
+  position: relative;
+  padding-top: 100px;
+}
+
+/* line 7, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.footer__link-ir-pro-topo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, -50%);
+  padding: 3rem;
+  border-radius: 50%;
+  background-color: #fcc537;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 22, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.footer__link-ir-pro-topo:hover {
+  background-color: #f2ae00;
+}
+
+/* line 27, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.link-ir-pro-topo__icon {
+  color: #fff;
+  font-size: 3rem;
+}
+
+/* line 33, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.container-lista-e-container-marca {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 62.5rem) {
+  /* line 33, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+  .container-lista-e-container-marca {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* line 44, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.container-lista {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+@media screen and (max-width: 62.5rem) {
+  /* line 44, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+  .container-lista {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+/* line 55, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.footer__lista {
+  list-style-type: none;
+}
+
+/* line 59, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.footer__item {
+  line-height: 5rem;
+}
+
+/* line 63, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.footer__link {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/* line 69, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+/* line 74, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.container-marca {
+  width: 30%;
+}
+
+@media screen and (max-width: 62.5rem) {
+  /* line 74, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+  .container-marca {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 37.5rem) {
+  /* line 74, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+  .container-marca {
+    width: 100%;
+  }
+}
+
+/* line 86, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.container__logo {
+  margin-bottom: 4rem;
+}
+
+/* line 90, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.footer__logo {
+  width: 16rem;
+}
+
+/* line 94, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.footer__paragrafo {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+/* line 100, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.container__rede-sociais {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* line 106, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.footer__rede-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem;
+  border-radius: 50%;
+  color: #b7b7b7;
+  background-color: #938c7b;
+  text-decoration: none;
+}
+
+/* line 119, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.footer__icon {
+  font-size: 2.4rem;
+}
+
+/* line 123, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.footer__hr {
+  border: 1px solid #707070;
+  opacity: 0.5;
+}
+
+/* line 129, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_footer.scss */
+.footer__paragrafo-direitos {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 7rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

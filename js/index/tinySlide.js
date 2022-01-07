@@ -68,9 +68,9 @@ let btnPrev = document.querySelectorAll('button[data-controls="prev"]');
 let btnNext = document.querySelectorAll('button[data-controls="next"]');
 
 btnPrev.forEach(btn => btn.innerHTML = 
-    `<span class="material-icons">navigate_before</span>`
+    `<span class="material-icons  tns-controls__icon">navigate_before</span>`
 );
 
 btnNext.forEach(btn => btn.innerHTML = 
-    `<span class="material-icons">navigate_next</span>`
+    `<span class="material-icons  tns-controls__icon">navigate_next</span>`
 );

@@ -850,10 +850,9 @@ body {
 .container-select-episode-e-container-episodes-slider {
   display: flex;
   justify-content: space-between;
-  background-color: rebeccapurple;
 }
 
-/* line 11, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 10, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .container-select-episode {
   position: relative;
   display: flex;
@@ -862,7 +861,7 @@ body {
   width: 30%;
 }
 
-/* line 19, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 18, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .container-select-episode::after {
   position: absolute;
   top: 50%;
@@ -874,19 +873,19 @@ body {
 }
 
 /* Select temporada */
-/* line 34, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 33, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .episodes__select-temporada-custom {
   position: relative;
   border: 1px solid #b2b2b2;
   border-radius: 5px;
 }
 
-/* line 40, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 39, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .episodes__select-temporada-custom:hover > .select-temporada-custom__container-index-temporada {
   display: flex;
 }
 
-/* line 45, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 44, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .select-temporada-custom__temporada-selecinada {
   position: relative;
   z-index: 1;
@@ -899,7 +898,7 @@ body {
   cursor: pointer;
 }
 
-/* line 61, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 60, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .select-temporada-custom__container-index-temporada {
   position: absolute;
   left: 0;
@@ -912,7 +911,7 @@ body {
   background-color: #5a5a5a;
 }
 
-/* line 75, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 74, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .select-temporada-custom__index-temporada {
   width: 100%;
   padding: 0.5rem 0;
@@ -922,17 +921,17 @@ body {
   cursor: pointer;
 }
 
-/* line 86, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 85, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .select-temporada-custom__index-temporada:hover:not(:last-child) {
   background-color: #0059acb9;
 }
 
-/* line 90, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 89, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .select-temporada-custom__index-temporada:first-child {
   border-radius: 5px 5px 0 0;
 }
 
-/* line 94, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 93, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .select-temporada-custom__index-temporada:last-child {
   padding: 1.05rem 0;
   border-top: 1px solid #b2b2b2;
@@ -941,21 +940,23 @@ body {
 }
 
 /* Tiny slide */
-/* line 104, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 103, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .container-episodes-slider {
   width: 70%;
 }
 
-/* line 108, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 107, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .tns-controls {
   position: absolute;
   top: 0;
   right: 0;
+  display: flex;
 }
 
-/* line 114, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 115, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 button[data-controls="prev"],
 button[data-controls="next"] {
+  display: flex;
   margin-right: 10px;
   padding: 3px;
   border: 1px solid #fff;
@@ -964,18 +965,23 @@ button[data-controls="next"] {
   background-color: #474852;
 }
 
-/* line 125, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 127, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 button[data-controls="prev"] > span,
 button[data-controls="next"] > span {
   vertical-align: bottom;
 }
 
-/* line 130, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 132, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+.tns-controls__icon {
+  font-size: 2.4rem;
+}
+
+/* line 136, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .episode-container-main {
   display: flex;
 }
 
-/* line 134, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 140, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .episode-container {
   display: flex;
   flex-direction: column;
@@ -983,14 +989,14 @@ button[data-controls="next"] > span {
   align-items: center;
 }
 
-/* line 141, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 147, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .episode_capa {
   width: 14rem;
   height: 18rem;
   margin-bottom: 20px;
 }
 
-/* line 147, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
+/* line 153, ../../Users/Israel/Desktop/projetos/FilimoMovieStreamer/sass/components/_episodes.scss */
 .episode_titulo {
   color: #fff;
   font-size: 1.6rem;

@@ -222,25 +222,23 @@
     flex-wrap: wrap;
 }
 
-.container-botoes-serie .main__botao {
+.container-botoes-serie .main-botao {
     font-size: 1.7rem;
 }
 
-.container-botoes-serie > .main__botao {
-    margin-right: 0;
-
+.container-botoes-serie > .main-botao {
     @media screen and (max-width: 32.125rem) {
         margin-top: 30px;
     }
 }
 
-.container-botoes-serie > .main__botao > .main__botao__icon {
+.container-botoes-serie > .main-botao > .main-botao__main-botao-icon {
     margin-left: -6px;
 
     color: $amarelo-escuro;
 }
 
-.container-botoes-serie > .main__botao > .principais__btn-text + .main__botao__icon {
+.container-botoes-serie > .main-botao > .principais__btn-text + .main-botao__main-botao-icon {
     margin-left: 0;
 }
 

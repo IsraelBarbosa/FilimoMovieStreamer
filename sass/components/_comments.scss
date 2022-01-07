@@ -1,79 +1,114 @@
-/* COMMENTS */
-.comments {
-    max-width: 1200px;
-    margin: 50px auto 90px auto;
-}
-
 .comments__titulo {
-    font-size: 20px;
-    color: white;
-    font-weight: 500;
-    padding: 0 50px;
-    margin-bottom: 50px;
     position: relative;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+    color: white;
+
+    font-size: 2rem;
+    font-weight: 500;
 }
 
-.comments__titulo::before,
-.comments__titulo::after {
-    content: "___";
-    font-weight: bold;
-    position: absolute;
-    top: -38%;
+.titulo__hifen-esq,
+.titulo__hifen-dir {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+
+    background-color: white;
 }
 
-.comments__titulo::before {
-    left: 0%;
+.titulo__hifen-esq {
+    margin-right: 20px;
 }
 
-.comments__titulo::after {
-    left: 165px;
+.titulo__hifen-dir {
+    margin-left: 20px;
 }
 
 .comments__container-box-e-comments {
     display: flex;
+
+    @media screen and (max-width: 53.125rem){
+        flex-direction: column;
+    }
 }
 
 .comments__container-box {
     position: relative;
+
     width: 30%;
-    height: 250px;
+    border-radius: 10px;
+
+    @media screen and (max-width: 53.125rem){
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.container-form-e-emoji {
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+    background-color: #54514e;
+}
+
+.comments__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 0 0rem 0;
+    border-radius: 10px;
 }
 
 .comments__textarea {
     width: 100%;
-    height: 210px;
-    font-family: 'PT Sans', sans-serif;
-    color: #91908e;
-    background-color: #54514e;
-    resize: none;
+    height: 18rem;
+    
     border: none;
-    padding: 25px 20px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 1rem;
+    padding: 0 20px;
+    
+    color: #91908e;
+    background-color: transparent;
+
+    font-family: 'PT Sans', sans-serif;
+    resize: none;
+    outline: none;
 }
 
 .comments__button {
     padding: 8px 20px;
-    color: #fff;
-    background-color: #FCC537;
     border: none;
     border-radius: 5px;
+
+    font-size: 1.5rem;
+
+    color: #fff;
+    background-color: #FCC537;
+
+    cursor: pointer;
 }
 
 .comments__container-emoji {
-    position: absolute;
-    left: 0;
-    bottom: 50px;
-    width: 90%;
-    transform: translateX(5%);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .comments__emoji {
     display: inline-block;
-    font-size: 27px;
-    margin-right: 10px;
+
+    font-size: 2.7rem;
+   
     cursor: pointer;
+    user-select: none;
 }
 
 .comments__emoji:last-child {
@@ -84,14 +119,20 @@
 .comments__container-comments {
     width: 66%;
     margin-left: 4%;
+
+    @media screen and (max-width: 53.125rem){
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 .comments__cont-comment {
-    padding: 18px 25px;
+    padding: 18px 20px;
     border-radius: 10px;
-    background-color: #54514e;
     display: flex;
     margin-bottom: 20px;
+    
+    background-color: #54514e;
 }
 
 .comments__container-left {
@@ -104,48 +145,57 @@
 }
 
 .comments__img-perfil {
-    width: 48px;
+    width: 4.8rem;
     border: 1px solid #fff;
     border-radius: 50%;
-
 }
 
 .comments__nome-perfil {
-    font-size: 14px;
-    color: #B8B8B8;
     display: inline-block;
     margin-left: 15px;
+
+    color: #B8B8B8;
+
+    font-size: 1.4rem;
 }
 
 .comments__comet {
-    color: #fff;
     margin: 20px 0 0 8%;
+
+    color: #fff;
 }
 
 .comments__container-right {
     width: 20%;
     border-left: 1px solid #fff;
+    margin-left: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
     text-align: center;
 }
 
 .comments__nota {
-    color: #FCC537;
-    font-weight: bold;
-    font-size: 15px;
     margin-bottom: 5px;
+
+    color: #fcc537;
+
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .comments__data {
     color: #fff;
-    font-size: 13px;
+
+    font-size: 1.3rem;
 }
 
 .comments__exibir-mais {
     color: #fff;
+
     text-align: center;
+
     cursor: pointer;
 }

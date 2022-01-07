@@ -31,7 +31,6 @@
 
     
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/responsiveStyle.css">
 </head>
 
 <body>
@@ -342,48 +341,62 @@
     </section>
 
     <!-- COMMENTS -->
-    <section class="comments">
-        <h1 class="comments__titulo">Comments</h1>
+    <section class="layout-comments">
+        <div class="container  container--medium  container--responsive">
 
-        <div class="comments__container-box-e-comments">
-            <div class="comments__container-box">
-                <form class="comments__form" action="" method="post">
-                    <textarea class="comments__textarea" name="" placeholder="Write your review here..."></textarea>
-                    <button class="comments__button" type="submit">Submit</button>
-                </form>
+            <div class="comments">
+                <h1 class="comments__titulo">
+                <span class="titulo__hifen-esq"></span> 
+                    Comments
+                <span class="titulo__hifen-dir"></span> 
+                </h1>
 
-                <div class="comments__container-emoji">
-                    <span class="comments__emoji">&#128512;</span>
-                    <span class="comments__emoji">&#128513;</span>
-                    <span class="comments__emoji">&#128548;</span>
-                    <span class="comments__emoji">&#128522;</span>
-                    <span class="comments__emoji">&#128546;</span>
-                    <span class="comments__emoji">&#128526;</span>
-                    <span class="comments__emoji">&#128530;</span>
-                </div>
-            </div>
+                <div class="comments__container-box-e-comments">
+                    <div class="comments__container-box">
+                        <div class="container-form-e-emoji">
+                            <form class="comments__form" action="" method="post">
+                                <textarea class="comments__textarea" name="" placeholder="Write your review here..."></textarea>
+                            </form>
 
-            <div class="comments__container-comments">
-                <div class="comments__cont-comment">
-                    <div class="comments__container-left">
-                        <div class="comments__container-profile">
-                            <img class="comments__img-perfil" src="img/user.png" width="50" alt="foto perfil">
-                            <span class="comments__nome-perfil">bruhperson</span>
+                            <div class="comments__container-emoji">
+                                <span class="comments__emoji">&#128512;</span>
+                                <span class="comments__emoji">&#128513;</span>
+                                <span class="comments__emoji">&#128548;</span>
+                                <span class="comments__emoji">&#128522;</span>
+                                <span class="comments__emoji">&#128546;</span>
+                                <span class="comments__emoji">&#128526;</span>
+                                <span class="comments__emoji">&#128530;</span>
+                            </div>
                         </div>
 
-                        <p class="comments__comet">Re-Watched it 7 times and counting. I guess I liked it.</p>
+                        <button class="comments__button">Submit</button>
                     </div>
 
-                    <div class="comments__container-right">
-                        <span class="comments__nota">9/10</span>
-                        <span class="comments__data">12 Oct 2019</span>
+                    <div class="comments__container-comments">
+                        <div class="comments__todos-comentarios">
+                            <div class="comments__cont-comment">
+                                <div class="comments__container-left">
+                                    <div class="comments__container-profile">
+                                        <img class="comments__img-perfil" src="img/user.png" width="50" alt="foto perfil">
+                                        <span class="comments__nome-perfil">bruhperson</span>
+                                    </div>
+
+                                    <p class="comments__comet">Re-Watched it 7 times and counting. I guess I liked it.</p>
+                                </div>
+
+                                <div class="comments__container-right">
+                                    <span class="comments__nota">9/10</span>
+                                    <span class="comments__data">12 Oct 2019</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comments__exibir-mais">More &#129139;</div>
                     </div>
                 </div>
-
-                <div class="comments__exibir-mais">More &#129139;</div>
             </div>
-        </div>
 
+        </div>
     </section>
 
 
@@ -396,6 +409,7 @@
     <script src="./js/index/abrirVideoPrincipal.js"></script>
     <script type="module" src="./js/index/selectEpisodesCustom.js"></script>
     <script src="./js/index/createFilmesTinySlideMoreLikeThisDom.js"></script>
+    <script src="./js/index/createComment.js"></script>
     
 
     <!-- VideoJs -->

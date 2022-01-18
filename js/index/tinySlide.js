@@ -8,22 +8,20 @@ var slider = tns({
     slideBy: 1,
     swipeAngle: false,
     speed: 400,
+    gutter: 30,
     nav: false,
     responsive: {
-        1200: {
+        1000: {
             items: 5,
         },
-        1000: {
+        800: {
             items: 4,
         },
-        800: {
+        600: {
             items: 3,
         },
-        600: {
+        450: {
             items: 2,
-        },
-        300: {
-            items: 1,
         },
     }
 });
@@ -43,20 +41,21 @@ var slider = tns({
     speed: 400,
     loop: false,
     nav: false,
+    gutter: 30,
     responsive: {
         1200: {
             items: 5,
         },
-        1000: {
+        800: {
             items: 4,
         },
-        800: {
+        500: {
             items: 3,
         },
-        580: {
+        350: {
             items: 2,
         },
-        300: {
+        349: {
             items: 1,
         },
     }

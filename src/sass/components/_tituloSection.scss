@@ -1,0 +1,27 @@
+.titulo-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    color: white;
+
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.titulo-section__hifen-esq,
+.titulo-section__hifen-dir {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+
+    background-color: white;
+}
+
+.titulo-section__hifen-esq {
+    margin-right: 20px;
+}
+
+.titulo-section__hifen-dir {
+    margin-left: 20px;
+}

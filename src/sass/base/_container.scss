@@ -1,0 +1,22 @@
+//------------------\\
+//    #CONTAINER
+//------------------//
+.container {
+    width: 100%; 
+    max-width: 170rem;
+    margin: 0 auto;
+}
+
+.container--medium {
+    max-width: 120rem;
+}
+
+.container--responsive {
+    @media screen and (max-width: 79.375rem){
+        padding: 0 30px;
+    }
+
+    @media screen and (max-width: 25rem){
+        padding: 0 15px;
+    }
+}

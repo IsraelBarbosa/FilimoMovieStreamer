@@ -1,0 +1,158 @@
+.comments__container-box-e-comments {
+    display: flex;
+
+    @media screen and (max-width: 53.125rem){
+        flex-direction: column;
+    }
+}
+
+.comments__container-box {
+    position: relative;
+
+    width: 30%;
+    border-radius: 10px;
+
+    @media screen and (max-width: 53.125rem){
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.container-form-e-emoji {
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+    background-color: #54514e;
+}
+
+.comments__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 0 0rem 0;
+    border-radius: 10px;
+}
+
+.comments__textarea {
+    width: 100%;
+    height: 18rem;
+    
+    border: none;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 1rem;
+    padding: 0 20px;
+    
+    color: #91908e;
+    background-color: transparent;
+
+    font-family: 'PT Sans', sans-serif;
+    resize: none;
+    outline: none;
+}
+
+.comments__container-emoji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.comments__emoji {
+    display: inline-block;
+
+    font-size: 2.7rem;
+   
+    cursor: pointer;
+    user-select: none;
+}
+
+.comments__emoji:last-child {
+    margin-right: 0px;
+}
+
+
+.comments__container-comments {
+    width: 66%;
+    margin-left: 4%;
+
+    @media screen and (max-width: 53.125rem){
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.comments__cont-comment {
+    padding: 18px 20px;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 20px;
+    
+    background-color: #54514e;
+}
+
+.comments__container-left {
+    width: 80%;
+}
+
+.comments__container-profile {
+    display: flex;
+    align-items: center;
+}
+
+.comments__img-perfil {
+    width: 4.8rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.comments__nome-perfil {
+    display: inline-block;
+    margin-left: 15px;
+
+    color: #B8B8B8;
+
+    font-size: 1.4rem;
+}
+
+.comments__comet {
+    margin: 20px 0 0 8%;
+
+    color: #fff;
+}
+
+.comments__container-right {
+    width: 20%;
+    border-left: 1px solid #fff;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.comments__nota {
+    margin-bottom: 5px;
+
+    color: #fcc537;
+
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.comments__data {
+    color: #fff;
+
+    font-size: 1.3rem;
+}
+
+.comments__exibir-mais {
+    color: #fff;
+
+    text-align: center;
+
+    cursor: pointer;
+}

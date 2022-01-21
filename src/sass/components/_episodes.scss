@@ -1,0 +1,195 @@
+.episodes {
+    position: relative;
+}
+
+.container-select-episode-e-container-episodes-slider {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-select-episode {
+    position: relative;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 15%;
+
+    &::after {
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        width: 100%;
+        height: 1px;
+
+        background-color: #fff;
+
+        content: "";
+    }
+
+
+    @media screen and (max-width: 800px){
+       width: 20%;
+    }
+
+    @media screen and (max-width: 600px){
+       width: 30%;
+    }
+
+    @media screen and (max-width: 450px){
+       width: 50%;
+    }
+}
+
+/* Select temporada */
+.episodes__select-temporada-custom {
+    position: relative;
+
+    border: 1px solid #b2b2b2;
+    border-radius: 5px;
+
+    &:hover > .select-temporada-custom__container-index-temporada{
+        display: flex;
+    }
+}
+
+.select-temporada-custom__temporada-selecinada {
+    position: relative;
+    z-index: 1; 
+
+    display: inline-block;
+    padding: 1.05rem 2rem;
+    border-radius: 5px;
+
+    color: #fff;
+    background-color: #161721;
+
+    font-size: 2.4rem;
+
+    cursor: pointer;
+}
+
+.select-temporada-custom__container-index-temporada {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    
+    width: 100%;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+
+    background-color: #5a5a5a;
+}
+
+.select-temporada-custom__index-temporada {
+    width: 100%;
+    padding: 0.5rem 0;
+
+    color: #fff;
+
+    font-size: 1.6rem;
+    text-align: center;
+
+    cursor: pointer;
+
+    &:hover:not(:last-child) {
+        background-color: #0059acb9;
+    }
+
+    &:first-child {
+        border-radius: 5px 5px 0 0;
+    }
+
+    &:last-child {
+        padding: 1.05rem 0;
+        border-top: 1px solid #b2b2b2;
+        border-radius: 5px;
+
+        font-size: 2.4rem;
+    }
+}
+
+/* Tiny slide */
+.container-episodes-slider {
+    width: 85%;
+
+    @media screen and (max-width: 500px){
+        position: relative;
+
+        padding-top: 5rem;
+    }
+
+    @media screen and (max-width: 800px){
+       width: 80%;
+    }
+
+    @media screen and (max-width: 600px){
+       width: 70%;
+    }
+
+    @media screen and (max-width: 450px){
+       width: 50%;
+    }
+}
+
+.tns-controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+}
+
+button[data-controls="prev"], 
+button[data-controls="next"] {
+    display: flex;
+    margin-right: 10px;
+    padding: 3px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+
+    color: #fff;
+    background-color: #474852;
+}
+
+ 
+button[data-controls="next"]:last-child {
+    margin-right: 0;
+}
+
+button[data-controls="prev"] > span, 
+button[data-controls="next"] > span {
+    vertical-align: bottom;
+}
+
+.tns-controls__icon {
+    font-size: 2.4rem;
+}
+
+.episode-container-main {
+    display: flex;
+}
+
+.episode-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.episode_capa {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.episode_titulo {
+    color: #fff;
+
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: normal;
+}

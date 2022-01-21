@@ -1,0 +1,77 @@
+@import '../base/_colors';
+@import '../base/_typography';
+@import '../sass-utils/_global';
+
+
+.container-thriller {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 65rem) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.about__video-thriller {
+    width: 35%;
+    max-height: 22.9rem;
+
+    @media screen and (max-width: 65rem) {
+        width: 60%;
+        height: auto;
+    }
+
+    @media screen and (max-width: 43.75rem) {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.container-about-descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+
+    @media screen and (max-width: 65rem) {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+.container-about-descricao__titulo-e-paragrafo {
+    display: flex;
+
+    @media screen and (max-width: 65rem) {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about__sub-titulo {
+    font-size: 1.6rem;
+
+    color: #BCBCBC;
+}
+
+.container-about-descricao__titulo-e-paragrafo:nth-child(1) .about__sub-titulo {
+    margin-right: 2rem;
+}
+
+.container-about-descricao__titulo-e-paragrafo:nth-child(2) .about__sub-titulo {
+    margin-right: 3.3rem;
+}
+
+.container-about-descricao__titulo-e-paragrafo:nth-child(3) .about__sub-titulo {
+    margin-right: 4.8rem;
+}
+
+.about__paragrafo {
+    font-size: 1.5rem;
+
+    color: white;
+}
